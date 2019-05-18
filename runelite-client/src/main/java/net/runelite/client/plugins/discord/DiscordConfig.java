@@ -118,4 +118,12 @@ public interface DiscordConfig extends Config
 	{
 		return true;
 	}
+
+	@ConfigItem(
+					keyName = "showMenuActivity",
+					name = "Show activity in the main menu",
+					description = "Configures if your activity in the main menu should be shown",
+					position = 9
+	)
+	default boolean showMenuActivity() { return true; }
 }

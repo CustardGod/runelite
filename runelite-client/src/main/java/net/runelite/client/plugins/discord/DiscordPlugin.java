@@ -123,7 +123,6 @@ public class DiscordPlugin extends Plugin
 
 		discordButton = NavigationButton.builder()
 			.tab(false)
-			.tooltip("Join Discord")
 			.icon(icon)
 			.onClick(() -> LinkBrowser.browse(properties.getDiscordInvite()))
 			.build();
